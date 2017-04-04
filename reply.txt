@@ -1,0 +1,56 @@
+{
+      "articlereply": {
+        "properties": {
+          "articleId": {
+            "type": "long"
+          },
+          "clientCode": {
+            "type": "long"
+          },
+          "contents": {
+            "type": "string",
+            "analyzer": "ik_smart"
+          },
+          "floorNumber": {
+            "type": "long"
+          },
+          "gameId": {
+            "type": "long"
+          },
+          "iP": {
+            "type": "string"
+          },
+          "isDelete": {
+            "type": "long"
+          },
+          "layer": {
+            "type": "long"
+          },
+          "likeCount": {
+            "type": "long"
+          },
+          "parentReplyId": {
+            "type": "long"
+          },
+          "parentReplyUserId": {
+            "type": "long"
+          },
+          "replyCount": {
+            "type": "long"
+          },
+          "replyDate": {
+            "type": "date",
+            "format": "strict_date_optional_time||epoch_millis"
+          },
+          "replyId": {
+            "type": "long"
+          },
+          "topReplyId": {
+            "type": "long"
+          },
+          "userId": {
+            "type": "long"
+          }
+        }
+      }
+    }

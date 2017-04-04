@@ -11,6 +11,7 @@ import eshelper
 @get('/')
 async def index(request):
     #users = await User.findAll()
+    print("%s" % request.query_string)
     users=eshelper.do_search("a")
     return {
         '__template__': 'test.html',
