@@ -2,3 +2,5 @@ pip install aiohttp
 
 
 pip install jinja2
+
+pip install elasticsearch==2.4.1

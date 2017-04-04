@@ -6,11 +6,12 @@ __author__ = 'lion zheng'
 ' url handlers '
 
 from coroweb import get, post
+import eshelper
 
 @get('/')
 async def index(request):
     #users = await User.findAll()
-    users=[{"name":"world","email":"aa@qq.com"},{"name":"hello","email":"11@qq.com"}]
+    users=eshelper.do_search("a")
     return {
         '__template__': 'test.html',
         'users': users
